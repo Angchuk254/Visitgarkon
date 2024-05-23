@@ -1,0 +1,33 @@
+<nav>
+  <div class="titleView m-3 d-flex justify-content-between justify-content-md-center  align-items-center  ">
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="contentMobile">
+      <p class="m-0 text-center visitgark">VISIT GARKON</p>
+      <p class="m-0 subtitle text-center ">OFFICIAL VISITOR GUIDE</p>
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <hr>
+
+  <ul class="menu" [ngClass]="{ 'active': isMenuOpen }">
+    <div class="closeBox d-flex justify-content-end text-black  d-md-none">
+      <i class="fa-solid fa-xmark" (click)="toggleMenu()"></i>
+    </div>
+    <li class="nav-junk" routerLink="/" routerLinkActive="checked" [routerLinkActiveOptions]="{exact:true}"
+      ariaCurrentWhenActive="page" (click)="closeMenu()">Home</li>
+    <li class="nav-junk" routerLink="/accommodation" routerLinkActive="checked" [routerLinkActiveOptions]="{exact:true}"
+      ariaCurrentWhenActive="page" (click)="closeMenu()">Accommodation</li>
+    <li class="nav-junk" routerLinkActive="checked" [routerLinkActiveOptions]="{exact:true}"
+      ariaCurrentWhenActive="page" (click)="closeMenu()">Travel Information</li>
+    <li class="nav-junk" routerLinkActive="checked" [routerLinkActiveOptions]="{exact:true}"
+      ariaCurrentWhenActive="page" (click)="closeMenu()">Things to Do</li>
+    <li class="nav-junk" routerLinkActive="checked" [routerLinkActiveOptions]="{exact:true}"
+      ariaCurrentWhenActive="page" (click)="closeMenu()">Blogs</li>
+    <li class="nav-junk" routerLink="/contact" routerLinkActive="checked" [routerLinkActiveOptions]="{exact:true}"
+      ariaCurrentWhenActive="page" (click)="closeMenu()">Contact</li>
+  </ul>
+</nav>

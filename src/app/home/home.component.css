@@ -1,0 +1,55 @@
+img{
+    height: 500px;
+}
+
+.item {
+    text-align: center;
+  }
+  
+  .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+  }
+  .carousel-caption {
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.titlecaroussel{
+    font-size: 50px;
+}
+.titleRecent{
+    color: #fff;
+    font-size: 38px;
+    font-weight: 600;
+}
+.bgImage{
+    height: 310px;
+    width: 310px;
+    background-image: url(../../assets/images/flowerBlossom.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+  
+}
+.text-size{
+    font-size: 25px;
+}
+@media screen and (max-width:600px){
+    img{
+        height: auto;
+    }
+    .nav-junk {
+        padding: 9px;
+        font-weight: 600;
+        font-size: 30px;
+    }
+}

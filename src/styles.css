@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: CustomFont;
+    src: url('./assets/fonts/Proxima-Nova-Regular.otf') format('truetype');
+}
+
+body {
+    font-family: CustomFont, Arial, sans-serif !important; 
+}
+.containerFixxer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.boxBg{
+    background: linear-gradient(180deg, #4287f5, #4cd964);
+    /* color: #fff; */
+}
+@media screen and (max-width:600px){
+    .nav-junk {
+        padding: 9px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
